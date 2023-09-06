@@ -34,16 +34,16 @@ const Header = () => {
         </Link>
       </div>
       <div className="header__menu">
-        <div className="header__menu__icon-container">
+        {/* <div className="header__menu__icon-container">
           <LanguageIcon className="u-display-none" />
         </div>
         <div className="header__menu__icon-container">
           <CartIcon />
         </div>
-        <Typography className="header__menu__signin">Sign In</Typography>
-
+        <Typography className="header__menu__signin">Sign In</Typography> */}
+        
         <div className="u-display-none">
-          <Button buttonType="default">Create Account</Button>
+          <Button buttonType="default">Get a Quote</Button>
         </div>
       </div>
       <Drawer

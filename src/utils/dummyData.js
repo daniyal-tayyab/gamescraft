@@ -43,46 +43,34 @@ import { ReactComponent as Youtube } from "../images/svgs/social/youtube-white.s
 
 export const sidebarItems = [
   {
-    title: "Events",
-    Icon: Events,
-    Active: EventsActive,
-    to: "/events",
-  },
-  {
-    title: "Map",
-    Icon: Map,
-    Active: MapActive,
-    to: "/map",
-  },
-  {
-    title: "Avatar",
-    Icon: Avatar,
-    Active: AvatarActive,
-    to: "/avatar",
-  },
-  {
-    title: "Marketplace",
-    Icon: Marketplace,
-    Active: MarketplaceActive,
-    to: "/marketplace",
-  },
-  {
-    title: "Partnerships",
-    Icon: Partnership,
-    Active: PartnershipActive,
-    to: "/partnership",
-  },
-  {
-    title: "News",
-    Icon: News,
-    Active: NewsActive,
-    to: "/news",
-  },
-  {
     title: "About",
     Icon: About,
     Active: AboutActive,
     to: "/about",
+  },
+  {
+    title: "Services",
+    Icon: Partnership,
+    Active: PartnershipActive,
+    to: "/services",
+  },
+  {
+    title: "Carrer",
+    Icon: Avatar,
+    Active: AvatarActive,
+    to: "/carrer",
+  },
+  {
+    title: "Contact Us",
+    Icon: Map,
+    Active: MapActive,
+    to: "/contact-us",
+  },
+  {
+    title: "Portfolio",
+    Icon: Events,
+    Active: EventsActive,
+    to: "/portfolio",
   },
 ];
 

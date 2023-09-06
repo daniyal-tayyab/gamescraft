@@ -1,25 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import HomeHero from "../components/home/HomeHero";
-import Community from "../components/home/Community";
-import Avatar from "../components/home/Avatar";
-import Land from "../components/home/Land";
-import Partners from "../components/home/Partners";
-import GetYourNft from "../components/home/GetYourNft";
-import Sand from "../components/home/Sand";
 
 import Footer from "../components/Footer";
+import About from "../components/home/About";
 
 const Home = () => {
+  const ref = useRef(null);
   return (
-    <main className="home">
+    <main className="home" ref={ref}>
       <HomeHero />
-      <Community />
-      <Avatar />
-      <Land />
-      <Partners />
-      <GetYourNft />
-      <Sand />
+      <About reference={ref}/>
       <Footer />
     </main>
   );
