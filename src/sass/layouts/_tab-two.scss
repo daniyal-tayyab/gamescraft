@@ -1,0 +1,46 @@
+.tab-two {
+  display: flex;
+}
+
+.column-2 {
+  background-color: #1d2125;
+  margin-top: 20px;
+  height: 436px;
+}
+
+.column-1 {
+  margin-top: 20px;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+
+  &__model {
+    width: 100%;
+    position: relative;
+
+    &__avatar {
+      height: 310px;
+      cursor: pointer;
+      padding-left: 20px;
+    }
+  }
+}
+
+.column-3 {
+  margin-top: 20px;
+  padding: 20px;
+  height: calc(100vh - 100px);
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

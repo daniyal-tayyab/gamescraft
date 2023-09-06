@@ -1,0 +1,88 @@
+.partnership {
+  margin-left: 55px;
+  height: calc(100vh - 50px);
+  width: calc(100vw - 55px);
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  &__section {
+    padding: 4rem 12rem;
+
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+
+      @media (max-width: 600px) {
+        font-size: 2.3rem;
+      }
+    }
+
+    @media (max-width: 750px) {
+      padding: 4rem 18rem;
+    }
+
+    @media (max-width: 600px) {
+      padding: 4rem 8rem;
+    }
+  }
+
+  &__services {
+    width: 100%;
+
+    background: radial-gradient(circle, #2a2277 0, #101113 100%);
+    background-position-y: -192px;
+
+    padding: 4rem 12rem;
+
+    h2 {
+      font-size: 2.8rem;
+      margin-bottom: 3rem;
+
+      @media (max-width: 600px) {
+        font-size: 2.3rem;
+      }
+    }
+
+    p {
+      font-size: 1.4rem;
+      width: 80%;
+      font-weight: bold;
+    }
+
+    button {
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: 1150px) {
+      padding: 4rem 8rem;
+    }
+
+    @media (max-width: 1070px) {
+      padding: 4rem 6rem;
+    }
+
+    @media (max-width: 930px) {
+      padding: 4rem 4rem;
+    }
+
+    @media (max-width: 830px) {
+      padding: 4rem 2rem;
+    }
+
+    // @media (max-width: 750px) {
+    //   padding: 4rem 18rem;
+    // }
+
+    // @media (max-width: 600px) {
+    //   padding: 4rem 8rem;
+    // }
+  }
+
+  @include respond(tab-port) {
+    width: 100vw;
+    margin-left: 0;
+  }
+}

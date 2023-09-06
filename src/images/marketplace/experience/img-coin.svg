@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 0 26 26" width="26">
+  <defs>
+    <style>.a{fill:#d6a200;}.b{fill:url(#a);}.c{fill:#ebb200;}.d{fill:url(#b);}.e{fill:#fdff03;}.f{fill:#cb8b03;}.g{fill:#eeb902;}</style>
+    <linearGradient gradientUnits="objectBoundingBox" id="a" x1="0.5" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#fff901"/>
+      <stop offset="1" stop-color="#fcd003"/>
+    </linearGradient>
+    <linearGradient href="#a" id="b" y1="1" y2="0"/>
+  </defs>
+  <g transform="translate(-112.5 -560)">
+    <circle class="a" cx="13" cy="13" r="13" transform="translate(112.5 560)"/>
+    <circle class="b" cx="12.48" cy="12.48" r="12.48" transform="translate(113.02 560.52)"/>
+    <circle class="c" cx="10.92" cy="10.92" r="10.92" transform="translate(114.58 562.08)"/>
+    <circle class="d" cx="10.4" cy="10.4" r="10.4" transform="translate(115.1 562.6)"/>
+    <g transform="translate(118.726 565.72)">
+      <path class="e" d="M323.465,59.882l6.76-3.165,6.76,3.165-6.43,5.5Z" transform="translate(-323.465 -56.716)"/>
+      <path class="f" d="M330.225,90.737V82.824l-6.76-3.482v7.6Z" transform="translate(-323.465 -76.177)"/>
+      <path class="g" d="M370.978,82.824l6.76-3.482v7.6l-6.76,3.8Z" transform="translate(-364.218 -76.177)"/>
+    </g>
+  </g>
+</svg>

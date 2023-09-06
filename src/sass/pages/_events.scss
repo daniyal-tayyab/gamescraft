@@ -1,0 +1,83 @@
+.events {
+  margin-left: 55px;
+  height: calc(100vh - 50px);
+  width: calc(100vw - 55px);
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+
+  @include respond(tab-port) {
+    width: 100vw;
+    margin-left: 0;
+  }
+}
+
+.react-tabs {
+  width: 100%;
+  height: 50px;
+  color: #fff;
+  display: flex;
+  border-bottom: 1px solid $color-grey-border;
+  background-color: $color-black-coal;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.react-tabs__tab-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+  margin-left: 100px;
+
+  @media (max-width: 900px) {
+    width: 100vw;
+    margin-left: 0;
+  }
+}
+
+.react-tabs__tab {
+  width: 150px;
+  padding: 1rem;
+  list-style: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.15s;
+  position: relative;
+
+  @media (max-width: 600px) {
+    width: 100vw;
+    margin-left: 0;
+  }
+}
+
+.react-tabs__tab--selected {
+  border-bottom: 2px solid $color-sky-blue;
+  outline: none;
+}
+
+.react-tabs__tab--disabled {
+  color: $color-grey-icon-hover;
+  cursor: default;
+}
+
+.react-tabs__tab:hover {
+  background: $color-tab-hover-color;
+}
+
+.react-tabs__tab-panel {
+  display: none;
+}
+
+.react-tabs__tab-panel--selected {
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 55px;
+  width: 100%;
+
+  @media (max-width: 900px) {
+    left: 0;
+  }
+}

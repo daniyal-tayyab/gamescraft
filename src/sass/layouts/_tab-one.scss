@@ -1,0 +1,87 @@
+.tab-one {
+  width: 100%;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  &__search {
+    height: 60px;
+    background-color: $color-black-coal;
+    border-bottom: 1px solid $color-grey-border;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+
+    &__tags {
+      display: flex;
+      column-gap: 10px;
+    }
+
+    &__input {
+      display: flex;
+      align-items: center;
+      background-color: $color-searchbar-background;
+      border-radius: 5px;
+      padding: 0 10px;
+
+      input {
+        width: 240px;
+        height: 35px;
+        border-radius: 5px;
+        border: none;
+        padding: 3px 5px;
+        background-color: $color-searchbar-background;
+        color: $color-sidebar-text;
+        margin-left: 5px;
+
+        &:focus {
+          outline: none;
+        }
+
+        @media (max-width: 800px) {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 800px) {
+        width: 80%;
+      }
+
+      @media (max-width: 600px) {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 900px) {
+      padding: 0 50px;
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column-reverse;
+      row-gap: 20px;
+      padding: 10px 100px;
+      height: auto;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  &__card-section {
+    padding: 2rem 12rem;
+
+    @media (max-width: 500px) {
+      padding: 2rem 8rem;
+    }
+
+    @media (max-width: 400px) {
+      padding: 2rem 4rem;
+    }
+  }
+}

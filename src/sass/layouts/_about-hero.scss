@@ -1,0 +1,36 @@
+.about-hero {
+  height: 400px;
+  background-image: linear-gradient(to right, #05050548, #05050548),
+    url(https://www.sandbox.game/img/14_Home/about-banner.jpg);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  padding-left: 8rem;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 35rem;
+      height: 10rem;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      max-width: 403px;
+      text-align: left;
+    }
+  }
+
+  @media (max-width: 800px) {
+    background-position: left;
+  }
+
+  @media (max-width: 900px) {
+    padding-left: 2rem;
+  }
+}
