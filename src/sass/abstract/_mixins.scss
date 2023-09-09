@@ -11,6 +11,13 @@
   justify-content: space-between;
 }
 
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 // media query manager
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {

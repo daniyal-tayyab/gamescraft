@@ -1,0 +1,33 @@
+.home-services {
+    margin: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .heading {
+        font-size: $heading-h2;
+        text-align: center;
+        width: max-content;
+        background: $color-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 2rem;
+    }
+
+    .services-card-section {
+        display: grid !important;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+
+        @media (max-width: 1100px) {
+            grid-template-columns: auto auto;
+        }
+
+        @media (max-width: 750px) {
+            grid-template-columns: auto;
+        }
+    }
+}

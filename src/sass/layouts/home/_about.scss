@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     margin: 8rem;
-    gap: 8rem;
+    gap: 10rem;
 
     .left {
         display: flex;
@@ -11,7 +11,7 @@
         justify-content: center;
 
         img {
-            width: 30rem;
+            width: 35rem;
         }
     }
 
@@ -22,14 +22,15 @@
         h2 {
             font-size: 2.5rem;
             color: #fff;
-        }
 
-        .line {
-            height: 2px;
-            width: 130px;
-            margin-bottom: 2rem;
-            background-color: $color-sky-blue;
-            margin-top: 3px;
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 120px;
+                height: 2px;
+                background-color: $color-sky-blue;
+            }
         }
 
         .desc {
@@ -51,18 +52,30 @@
 
 
         button {
-            // padding: 1rem 2rem;
-            // border: 1px solid $color-sky-blue;
-            // background-color: transparent;
-            // border-radius: 5px;
-            // color: #fff;
             width: max-content;
-            // cursor: pointer;
-            // transition: all 0.15s;
-
-            // &:hover {
-            //     background-color: $color-sky-blue;
-            // }
         }
+
+        @media (max-width: 750px) {
+            width: 80%;
+            align-items: center;
+            text-align: center;
+            gap: 15px;
+        }
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 800px) {
+        margin: 4rem;
+    }
+
+    @media (max-width: 750px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 600px) {
+        margin: 2rem;
     }
 }
