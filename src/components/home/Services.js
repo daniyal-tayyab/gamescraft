@@ -31,12 +31,12 @@ const Services = ({ reference }) => {
         );
       }, []);
   return (
-    <div className='home-services'>
-      <h2 className='heading'>Our Professional Services</h2>
+    <section className='home-services'>
+      <h2 className='section-heading'>Our Professional Services</h2>
       <section className='services-card-section'>
         {services.map((service, index) => <ServiceCard key={index} service={service} />)}
       </section>
-    </div>
+    </section>
   )
 }
 

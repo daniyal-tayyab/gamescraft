@@ -5,6 +5,7 @@ import HomeHero from "../components/home/HomeHero";
 import Footer from "../components/Footer";
 import About from "../components/home/About";
 import Services from "../components/home/Services";
+import Portfolio from "../components/home/Portfolio";
 
 const Home = () => {
   const ref = useRef(null);
@@ -13,7 +14,7 @@ const Home = () => {
       <HomeHero />
       <About reference={ref} />
       <Services reference={ref}/>
-      {/* <div className="pink">hello</div> */}
+      <Portfolio />
       <Footer />
     </main>
   );

@@ -1,21 +1,9 @@
 .home-services {
     margin: 8rem;
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 2rem;
 
-    .heading {
-        font-size: $heading-h2;
-        text-align: center;
-        width: max-content;
-        background: $color-gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-        margin-bottom: 2rem;
-    }
 
     .services-card-section {
         display: grid !important;

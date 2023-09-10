@@ -1,0 +1,10 @@
+.section-heading {
+    font-size: $heading-h2;
+    text-align: center;
+    width: max-content;
+    background: $color-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
+}
