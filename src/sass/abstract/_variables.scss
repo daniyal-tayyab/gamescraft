@@ -11,8 +11,8 @@ $color-footer-text: #9b9d9f;
 $color-searchbar-background: #202327;
 
 $color-white: #fff;
-$color-blue: #1d5dd3;
-$color-sky-blue: #0084ff;
+$color-primary: #f7232c;
+$color-secondary: #f07f27;
 $color-yellow: #deaf33;
 
 $color-parret: #2edb77;
@@ -27,4 +27,4 @@ $color-sidemenu-text: #97999c;
 $heading-h2: 2.5rem;
 $heading-h3: 1.8rem;
 
-$color-gradient: linear-gradient(#e66465, #9198e5);
+$color-gradient: linear-gradient(to bottom right, $color-primary, $color-secondary, $color-primary);

@@ -6,7 +6,7 @@
   left: 0;
   background-color: $color-black-coal;
   border-bottom: 1px solid $color-grey-border;
-  z-index: 100;
+  z-index: 99999999999999;
 
   @include center-space-between;
 

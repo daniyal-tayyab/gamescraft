@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Button from "../../Button";
+
 import unityLogo from "../../../images/services/unity.png";
 
 const ServiceCard = ({ service }) => {
@@ -31,6 +33,7 @@ const ServiceCard = ({ service }) => {
                      when an unknown printer took a galley of type and scrambled it to make a type
                      specimen book.
                     </p>
+                    <Button buttonType="default">View More</Button>
                 </div>
             </div>
         </div>

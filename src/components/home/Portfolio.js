@@ -1,28 +1,14 @@
 import React from 'react'
 import PortfolioCard from '../portfolio-card/PortfolioCard';
 
-import styled from "styled-components";
-
-import bg from "../../images/service-bg.jpg";
-
-const Container = styled.section`
-  background: url(${bg});
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-bottom: 4rem;
-`;
+import { portfolio } from "../../utils/portfolio.js";
 
 const Portfolio = () => {
   return (
     <section className='home-portfolio'>
-      <h2 className='section-heading'>Our Work</h2>
+      <h2 className='section-heading'>Our <span className='heading-span'>Work</span></h2>
       <div className='portfolio-section'>
-        <PortfolioCard />
-        <PortfolioCard />
-        <PortfolioCard />
-        <PortfolioCard />
-        <PortfolioCard />
-        <PortfolioCard />
+        {portfolio.map((game, index) => <PortfolioCard game={game}/>)}
       </div>
     </section>
   );

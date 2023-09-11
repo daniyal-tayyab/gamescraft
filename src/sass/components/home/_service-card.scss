@@ -12,7 +12,7 @@
   
       &--front {  
         width: 100%;
-        background-color: $color-blue;
+        background-color: $color-primary;
         position: absolute;
         top: 0;
         left: 0;
@@ -52,16 +52,30 @@
 
         .content {
             @include flex-center;
+            align-items: flex-start;
+            // justify-content: flex-start;
             flex-direction: column;
             color: $color-black-coal;
             height: 100%;
+            color: #fff;
 
             h3 {
-                font-size: $heading-h3;
+                font-size: 2rem;
+                margin: 3rem 0;
             }
 
             p {
                 font-size: 1.3rem;
+            }
+
+            button {
+              margin-top: 2rem;
+              width: 100%;
+
+              &:hover {
+                background: transparent;
+                border: 2px solid $color-white;
+              }
             }
         }
       }

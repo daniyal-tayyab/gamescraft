@@ -23,24 +23,25 @@
         h2 {
             font-size: 2.5rem;
             color: #fff;
+            margin-bottom: 2rem;
 
-            &::after {
-                content: "";
-                display: block;
-                position: absolute;
-                width: 120px;
-                height: 2px;
-                background-color: $color-sky-blue;
-            }
+            // &::after {
+            //     content: "";
+            //     display: block;
+            //     position: absolute;
+            //     width: 120px;
+            //     height: 2px;
+            //     background-color: $color-primary;
+            // }
         }
 
         .desc {
             font-size: 1.5rem;
             color: #fff;
 
-            span {
-                color: $color-sky-blue;
-            }
+            // span {
+            //     color: $color-primary;
+            // }
         }
 
         .para {

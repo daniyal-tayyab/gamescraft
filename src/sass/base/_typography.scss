@@ -1,10 +1,48 @@
 .section-heading {
-    font-size: $heading-h2;
+    font-size: 3rem;
     text-align: center;
     width: max-content;
+    display: flex; 
+    gap: 10px;
+    margin-bottom: 2rem;
+    position: relative;
+
+    .heading-span {
+        display: block;
+        background: $color-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        width: 80%;
+        border-color: $color-secondary transparent !important;
+        border-style: solid !important;
+        border-width: 4px 7px 0px 7px !important;
+        left: 50%;
+        top: 100%;
+        -webkit-transform: translate(-50%, 100%);
+        transform: translate(-50%, 100%);
+    }
+}
+
+.gr-txt {
     background: $color-gradient;
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.heading-main {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.1;
+    span {
+        display: block;
+    }
+    
 }

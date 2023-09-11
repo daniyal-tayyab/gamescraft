@@ -1,12 +1,19 @@
 import React from 'react'
 
-import { Container, Background, Blob } from './PortfolioCard.styles'
+import { Container, ImageContainer, ContentContainer } from './PortfolioCard.styles';
+import Button from "../Button";
 
-const PortfolioCard = () => {
+const PortfolioCard = ({ game }) => {
+  const { image, name, genre, releaseDate, rating, price } = game;
   return (
     <Container>
-        <Background></Background>
-        <Blob></Blob>
+      <ImageContainer img={image}/>
+      <ContentContainer className='game-card-content'>
+        <h3>{name}</h3>
+        <p>{genre}</p>
+        <p>Release Date: {releaseDate}</p>
+        <Button>View More</Button>
+      </ContentContainer>
     </Container>
   )
 }

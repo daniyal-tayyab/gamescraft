@@ -1,21 +1,22 @@
 .about-hero {
   height: 400px;
   background-image: linear-gradient(to right, #05050548, #05050548),
-    url(https://www.sandbox.game/img/14_Home/about-banner.jpg);
+    url(https://themescare.com/demos/faf-v2/assets/img/breadcrumb_bg.jpg);
   background-size: cover;
   background-position: center;
 
   display: flex;
   align-items: center;
+  justify-content: center;
   padding-left: 8rem;
 
   &__content {
     display: flex;
     flex-direction: column;
+    text-align: center;
 
-    img {
-      width: 35rem;
-      height: 10rem;
+    h1 {
+      font-size: 4rem;
     }
 
     p {

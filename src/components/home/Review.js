@@ -28,7 +28,7 @@ const Container = styled.section`
 
     h2 {
       margin: 0 auto;
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
     }
 
     @media (max-width: 500px) {
@@ -39,7 +39,7 @@ const Container = styled.section`
 const Review = () => {
   return (
     <Container>
-      <h2 className='section-heading'>What people say about us</h2>
+      <h2 className='section-heading'>What <span className='heading-span'>people say about us</span></h2>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

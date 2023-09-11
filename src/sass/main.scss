@@ -15,12 +15,12 @@
 @import "components/map-modal";
 @import "components/home/service-card";
 @import "components/home/story-card";
+@import "components/breadcrumbs";
 
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/home-hero";
 @import "layouts/footer";
-@import "layouts/tab-one";
 @import "layouts/sidemenu";
 @import "layouts/news-hero";
 @import "layouts/latest-articles";
@@ -28,14 +28,13 @@
 @import "layouts/maker";
 @import "layouts/highlights";
 @import "layouts/about-hero";
-@import "layouts/tab-two";
 @import "layouts/grid-component";
 @import "layouts/home/about";
 @import "layouts/home/services";
 @import "layouts/home/portfolio";
 
 @import "pages/home";
-@import "pages/events";
+@import "pages/contact";
 @import "pages/marketplace";
 @import "pages/map";
 @import "pages/partnership";

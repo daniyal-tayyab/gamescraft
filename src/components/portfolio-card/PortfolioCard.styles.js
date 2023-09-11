@@ -1,96 +1,94 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  position: relative;
-  width: 40rem;
-  height: 40rem;
-  border-radius: 1.4rem;
-  z-index: 1111;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0.5;
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    height: 36rem;
+    position: relative;
 
-  @media (max-width: 940px) {
-    width: 40rem;
-  }
+    &:hover .game-card-content {
+        opacity: 1;
+        transform: translateY(0);
+    }
 
-  @media (max-width: 700px) {
-    width: 60rem;
-    height: 60rem;
-  }
+    @media (max-width: 1020px) {
+        width: 30rem;
+        height: 36rem;
+    }
 
-  @media (max-width: 540px) {
-    width: 450px;
-  }
+    @media (max-width: 926px) {
+        width: 37rem;
+        height: 42rem;
+    }
 
-  @media (max-width: 480px) {
-    width: 350px;
-  }
+    @media (max-width: 650px) {
+        width: 55rem;
+        height: 55rem;
+    }
 
+    @media (max-width: 500px) {
+        width: 90vw;
+        height: 55rem;
+    }
 `;
 
-export const Background = styled.div`
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 40rem;
-  height: 40rem;
-  z-index: 2;
-  background: rgba(255, 255, 255);
-  /* background: #181d24; */
-  border-radius: 1rem;
-  overflow: hidden;
-  outline: 2px solid white;
-
-  @media (max-width: 940px) {
-    width: 39rem;
-  }
-
-  @media (max-width: 700px) {
-    width: 59rem;
-    height: 59rem;
-  }
-
-  @media (max-width: 540px) {
-    width: 450px;
-  }
-
-  @media (max-width: 480px) {
-    width: 350px;
-  }
+export const ImageContainer = styled.div`
+    background: url(${props => props.img});
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
 `;
 
-export const Blob = styled.div`
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  width: 16rem;
-  height: 16rem;
-  border-radius: 50%;
-  background-color: #ff0000;
-  opacity: 1;
-  filter: blur(12px);
-  animation: blob-bounce 5s infinite ease;
+export const ContentContainer = styled.div`
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 13rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    opacity: 0;
+    transform: translateY(10rem);
+    transition: all 0.15s;
 
-  @media (max-width: 940px) {
-    width: 20rem;
-    height: 20rem;
-  }
+    h3 {
+        font-size: 1.8rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        margin-bottom: 5px;
 
-  @media (max-width: 700px) {
-    width: 59rem;
-    height: 59rem;
-  }
+        @media (max-width: 650px) {
+            font-size: 2.2rem;
+        }
+    }
+    
+    p {
+        font-size: 1.2rem;
+        margin: 0;
 
-  @media (max-width: 540px) {
-    width: 450px;
-  }
+        @media (max-width: 650px) {
+            font-size: 1.8rem;
+        }
+    }
 
-  @media (max-width: 480px) {
-    width: 350px;
-  }
+    button {
+        width: max-content;
+        background: linear-gradient(to bottom right, #f7232c, #f07f27, #f7232c);
+        border: none;
+        font-size: 1rem;
+        margin-top: 1rem;
+
+        @media (max-width: 650px) {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (max-width: 650px) {
+        height: 17rem;
+    }
 `;

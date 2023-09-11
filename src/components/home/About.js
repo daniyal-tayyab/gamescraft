@@ -63,10 +63,10 @@ const About = ({reference}) => {
             <img src={bg} alt="globe" />
         </div>
         <div className='right'>
-            <h2>ABOUT US</h2>
-            <p className='desc'>"Redefining the Future with <span>Creativity</span>, <span>Passion</span>, and <span>Integrity</span>"</p>
+            <h2 className='section-heading'>ABOUT <span className='heading-span'>Us</span></h2>
+            <p className='desc'>"Redefining the Future with <span className='gr-txt'>Creativity</span>, <span className='gr-txt'>Passion</span>, and <span className='gr-txt'>Integrity</span>"</p>
             <span className='para'>Here at GamesCraft, As a leading technology company, we are dedicated to fostering innovation and providing safe, clever, and long-lasting IT solutions to companies of all sizes. Our goal is to change how businesses function in the quickly changing digital environment of today.</span>
-            <Button buttonType="inverted">Lear More</Button>
+            <Button buttonType="inverted">Learn More</Button>
         </div>
     </section>
   )
