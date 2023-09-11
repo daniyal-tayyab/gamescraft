@@ -7,5 +7,21 @@
         display: grid;
         grid-template-columns: auto auto auto;
         gap: 2rem;
+
+        @media (max-width: 940px) {
+            grid-template-columns: auto auto;
+        }
+
+        @media (max-width: 700px) {
+            grid-template-columns: auto;
+        }
+    }
+
+    @media (max-width: 940px) {
+        margin: 8rem 4rem;
+    }
+
+    @media (max-width: 700px) {
+        margin: 8rem 4rem;
     }
 }
