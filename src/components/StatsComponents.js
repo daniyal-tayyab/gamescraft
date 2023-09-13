@@ -2,12 +2,12 @@ import React, { useState, useRef, useEffect } from 'react';
 
 import styled from "styled-components";
 
-const Container = styled.div`
+const Container = styled.section`
     position: relative;
-    background: url(https://themescare.com/demos/faf-v2/assets/img/footer_bg.jpg) no-repeat fixed center center/cover;
-    z-index: 1;
-    height: 290px;
-    opacity: 0.8;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(https://themescare.com/demos/faf-v2/assets/img/footer_bg.jpg) no-repeat fixed center center/cover;
+    background-position: center;
+    height: 29rem;
+    padding: 10rem;
 `;
 
 const StatsContainer = styled.div`
@@ -17,12 +17,14 @@ const StatsContainer = styled.div`
    grid-template-columns: auto auto auto auto;
    place-items: center;
    margin: 0 auto;
+   opacity: 1;
 `;
 
 const StatContainer = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
+    
     h3 {
         margin-bottom: 0;
         &::after {
@@ -65,7 +67,6 @@ const Stat = ({count}) => {
     }, []);
 
     useEffect(() => {
-        console.log(isIntersecting);
         let counter = (minimum, maximum) => {
             for (let count = minimum; count <= maximum; count++) {
                 setTimeout(() => {

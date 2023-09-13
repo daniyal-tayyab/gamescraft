@@ -37,12 +37,18 @@
     font-weight: bold;
 }
 
-.heading-main {
+.heading-main, .heading-about {
     font-size: 4rem;
     text-align: center;
     line-height: 1.1;
+}
+
+.heading-main {
     span {
         display: block;
     }
-    
+}
+
+.sub-heading {
+    font-size: 3rem;
 }

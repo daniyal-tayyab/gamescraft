@@ -7,6 +7,7 @@ import About from "../components/home/About";
 import Services from "../components/home/Services";
 import Portfolio from "../components/home/Portfolio";
 import Review from "../components/home/Review";
+import StatsComponents from "../components/StatsComponents";
 
 const Home = () => {
   const ref = useRef(null);
@@ -14,6 +15,7 @@ const Home = () => {
     <main className="home" ref={ref}>
       <HomeHero />
       <About reference={ref} />
+      <StatsComponents />
       <Services reference={ref}/>
       <Portfolio />
       <Review />

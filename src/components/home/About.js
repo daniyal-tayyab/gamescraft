@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {Link} from "react-router-dom";
 
 import Button from '../Button';
 
@@ -65,8 +66,8 @@ const About = ({reference}) => {
         <div className='right'>
             <h2 className='section-heading'>ABOUT <span className='heading-span'>Us</span></h2>
             <p className='desc'>"Redefining the Future with <span className='gr-txt'>Creativity</span>, <span className='gr-txt'>Passion</span>, and <span className='gr-txt'>Integrity</span>"</p>
-            <span className='para'>Here at GamesCraft, As a leading technology company, we are dedicated to fostering innovation and providing safe, clever, and long-lasting IT solutions to companies of all sizes. Our goal is to change how businesses function in the quickly changing digital environment of today.</span>
-            <Button buttonType="inverted">Learn More</Button>
+            <span className='para'>Welcome to GamesCraft Studio, where creativity meets innovation in the world of mobile gaming! Our Creative Team at GamesCraft Studio, we're a talented ensemble of developers,  3D artists and animators who breathe life into virtual worlds. With expertise in industry-standard software like Unity, Unreal Engine, Blender, Maya, 3ds Max, and more, our creative team is poised to take your gaming experience to the next level.</span>
+            <Button buttonType="inverted"><Link to="/about">Learn More</Link></Button>
         </div>
     </section>
   )

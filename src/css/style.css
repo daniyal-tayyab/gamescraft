@@ -132,13 +132,18 @@ a {
   font-weight: bold;
 }
 
-.heading-main {
+.heading-main, .heading-about {
   font-size: 4rem;
   text-align: center;
   line-height: 1.1;
 }
+
 .heading-main span {
   display: block;
+}
+
+.sub-heading {
+  font-size: 3rem;
 }
 
 @media (max-width: 56.25em) {
@@ -149,6 +154,10 @@ a {
 
 .u-hide {
   display: none;
+}
+
+.txt-center {
+  text-align: center;
 }
 
 .button {
@@ -1353,7 +1362,7 @@ a {
 }
 
 .about-hero {
-  height: 400px;
+  height: 370px;
   background-image: linear-gradient(to right, rgba(5, 5, 5, 0.2823529412), rgba(5, 5, 5, 0.2823529412)), url(https://themescare.com/demos/faf-v2/assets/img/breadcrumb_bg.jpg);
   background-size: cover;
   background-position: center;
@@ -1375,11 +1384,6 @@ a {
   line-height: 24px;
   max-width: 403px;
   text-align: left;
-}
-@media (max-width: 800px) {
-  .about-hero {
-    background-position: left;
-  }
 }
 @media (max-width: 900px) {
   .about-hero {
@@ -1472,6 +1476,9 @@ a {
 }
 .home-about .right button {
   width: max-content;
+}
+.home-about .right button a {
+  color: #fff;
 }
 @media (max-width: 750px) {
   .home-about .right {
