@@ -1690,7 +1690,6 @@ a {
 
 .partnership {
   margin-left: 55px;
-  height: calc(100vh - 50px);
   width: calc(100vw - 55px);
   margin-top: 50px;
   display: flex;
@@ -1720,7 +1719,7 @@ a {
 }
 .partnership__services {
   width: 100%;
-  background: radial-gradient(circle, #2a2277 0, #101113 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), radial-gradient(circle, #f07f27 0, #f7232c 100%);
   background-position-y: -192px;
   padding: 4rem 12rem;
 }
@@ -1737,6 +1736,7 @@ a {
   font-size: 1.4rem;
   width: 80%;
   font-weight: bold;
+  margin-bottom: 4rem;
 }
 .partnership__services button {
   margin-top: 2rem;

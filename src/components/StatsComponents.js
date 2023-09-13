@@ -6,7 +6,6 @@ const Container = styled.section`
     position: relative;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(https://themescare.com/demos/faf-v2/assets/img/footer_bg.jpg) no-repeat fixed center center/cover;
     background-position: center;
-    height: 29rem;
     padding: 10rem;
 `;
 
@@ -14,7 +13,8 @@ const StatsContainer = styled.div`
    width: 80%;
    height: 100%;
    display: grid;
-   grid-template-columns: auto auto auto auto;
+   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+   gap: 2rem;
    place-items: center;
    margin: 0 auto;
    opacity: 1;

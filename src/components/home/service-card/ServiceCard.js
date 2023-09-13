@@ -3,6 +3,7 @@ import React from 'react';
 import Button from "../../Button";
 
 import unityLogo from "../../../images/services/unity.png";
+import { Link } from 'react-router-dom';
 
 const ServiceCard = ({ service }) => {
     const {title} = service;
@@ -33,7 +34,7 @@ const ServiceCard = ({ service }) => {
                      when an unknown printer took a galley of type and scrambled it to make a type
                      specimen book.
                     </p>
-                    <Button buttonType="default">View More</Button>
+                    <Button buttonType="default"><Link style={{color: "#fff"}} to="/services">View More</Link></Button>
                 </div>
             </div>
         </div>

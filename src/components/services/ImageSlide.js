@@ -73,7 +73,7 @@ const Image = styled.img`
   border-radius: 10px;
 `;
 
-const PartnerSlide = ({ item }) => {
+const ImageSlide = ({ item }) => {
   return (
     <Container>
       <Image src={item.image} alt="nan" />
@@ -83,4 +83,4 @@ const PartnerSlide = ({ item }) => {
   );
 };
 
-export default PartnerSlide;
+export default ImageSlide;
