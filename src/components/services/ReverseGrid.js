@@ -17,7 +17,7 @@ const Container = styled.div`
 
     h2 {
       font-size: 25px;
-      width: 80%;
+      /* width: 80%; */
       margin-top: 2rem;
 
       @media (max-width: 600px) {
@@ -28,7 +28,7 @@ const Container = styled.div`
 
     p {
       font-size: 13px;
-      width: 80%;
+      /* width: 80%; */
       margin-top: 1rem;
 
       @media (max-width: 600px) {

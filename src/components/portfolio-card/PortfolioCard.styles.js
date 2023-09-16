@@ -88,6 +88,11 @@ export const ContentContainer = styled.div`
         }
     }
 
+    @media (max-width: 1024px) {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
     @media (max-width: 650px) {
         height: 17rem;
     }

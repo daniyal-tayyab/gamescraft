@@ -14,8 +14,9 @@ import Footer from "../components/Footer";
 import ImageContentGrid from "../components/services/ImageContentGrid";
 import ReverseGrid from "../components/services/ReverseGrid";
 import ImageSlide from "../components/services/ImageSlide";
-import { slider } from "../utils/servicesData";
+import { servicesData } from "../utils/servicesData";
 import HeroCommon from "../components/HeroCommon";
+import CustomizedAccordions from "../components/CustomizedAccordions";
 
 const Services = () => {
   const { width } = useWindowDimensions();
@@ -28,15 +29,9 @@ const Services = () => {
     <main className="partnership">
       <HeroCommon page="Services"/>
       <section className="partnership__services">
-        <h2>Discover our services</h2>
-        {/* <p>
-          Agency Partners have a diverse range of industry expertise and
-          technical knowledge in The Sandbox ecosystem. They qualify for
-          specific criteria recognizing the quality of work.
-        </p> */}
-        {/* <Button buttonType="default">Find Agency Partner</Button> */}
+        <h2>Discover our <span className="gr-txt">services</span></h2>
         <Swiper
-          slidesPerView={width > 710 ? 2 : "auto"}
+          slidesPerView={width < 710 ? "auto" : width > 710 && width < 1350 ? 2 : 1}
           spaceBetween="70px"
           pagination={{
             clickable: true,
@@ -44,7 +39,7 @@ const Services = () => {
           modules={[Pagination]}
           className="mySwiper"
         >
-          {slider.map((item, index) => (
+          {servicesData.map((item, index) => (
             <SwiperSlide key={index}>
               <ImageSlide item={item} />
             </SwiperSlide>
@@ -52,9 +47,8 @@ const Services = () => {
         </Swiper>
       </section>
       <section className="partnership__section">
-        <h1>Work with the experts in the Metaverse</h1>
-        <ImageContentGrid />
-        <ReverseGrid />
+          <h2 className="section-heading">3D Modeling and Texturing</h2>
+          <CustomizedAccordions />
       </section>
       <Footer />
     </main>

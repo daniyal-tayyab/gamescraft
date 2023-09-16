@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -16,9 +17,6 @@ import StoryCard from './story-card/StoryCard';
 const Container = styled.section`
     margin: 8rem;
     position: relative;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
 
     .swiper {
       .swiper-button-prev, .swiper-button-next {
@@ -39,7 +37,7 @@ const Container = styled.section`
 const Review = () => {
   return (
     <Container>
-      <h2 className='section-heading'>What <span className='heading-span'>people say about us</span></h2>
+      <h2 className='section-heading'>What people say<Link to="/about"><span className='heading-span'> about us</span></Link></h2>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

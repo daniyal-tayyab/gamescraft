@@ -22,6 +22,20 @@ const Container = styled.div`
     font-weight: normal;
   }
 
+  @media (min-width: 1350px) {
+    max-width: 80vw;
+    min-width: 80vw;
+    min-height: 700px;
+
+    h5 {
+      font-size: 2.8rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+    }
+  }
+
   @media (max-width: 1260px) {
     max-width: 480px;
     min-width: 480px;
@@ -71,6 +85,10 @@ const Image = styled.img`
   height: 258px;
   object-fit: cover;
   border-radius: 10px;
+
+  @media (min-width: 1350px) {
+    min-height: 500px;
+  }
 `;
 
 const ImageSlide = ({ item }) => {

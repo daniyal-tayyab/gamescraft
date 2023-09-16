@@ -5,6 +5,8 @@ import gsap from 'gsap';
 import ServiceCard from './service-card/ServiceCard';
 
 import { services } from '../../utils/services';
+import { MdExpandMore } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 
 const Services = ({ reference }) => {
@@ -33,7 +35,12 @@ const Services = ({ reference }) => {
 
   return (
     <section className='home-services'>
-      <h2 className='section-heading'>Our<span className='heading-span'>Professional Services</span></h2>
+      <div className='heading-container'>
+        <h2 className='heading-aside'>Our<span className='heading-span'> Services</span></h2>
+        <Link to="/services">
+          <p className='see-all'>See all <span className='gr-txt'><MdExpandMore /></span></p>
+        </Link>
+      </div>
       <section className='services-card-section'>
         {services.map((service, index) => <ServiceCard key={index} service={service} />)}
       </section>
@@ -41,4 +48,4 @@ const Services = ({ reference }) => {
   )
 }
 
-export default Services
+export default Services;
