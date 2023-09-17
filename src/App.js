@@ -9,6 +9,7 @@ import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Carrer from "./pages/Carrer";
 import SingleGame from "./pages/SingleGame";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/carrer" element={<Carrer />} />
         <Route path="/single-game/:id" element={<SingleGame/>}/>
+        <Route path="*" element={<NotFound />}/>
       </Routes>
     </>
   );

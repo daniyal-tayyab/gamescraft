@@ -3,8 +3,7 @@ import styled from "styled-components";
 
 import { c1, c2, c3, socialIcons } from "../utils/dummyData";
 
-import { ReactComponent as FooterLogo } from "../images/footer/footer-logo.svg";
-import animoca from "../images/footer/small-animoca.avif";
+
 import { Link } from "react-router-dom";
 
 const Column = styled.div`
