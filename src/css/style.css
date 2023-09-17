@@ -1751,6 +1751,9 @@ a {
   font-size: 2rem;
   margin-bottom: 4rem;
 }
+.partnership__section .section-heading:not(:first-child) {
+  margin-top: 2rem;
+}
 .partnership__services {
   width: 100%;
   background: radial-gradient(circle, #181d24 0, #181d24 100%);

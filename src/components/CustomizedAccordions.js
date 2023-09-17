@@ -10,6 +10,7 @@ const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
   border: `1px solid ${theme.palette.divider}`,
+  width: "100%",
   '&:not(:last-child)': {
     borderBottom: 0,
   },
@@ -47,7 +48,7 @@ const styles = {
   color: "#fff"
 }
 
-export default function CustomizedAccordions() {
+export default function CustomizedAccordions({services}) {
   const [expanded, setExpanded] = React.useState('panel1');
 
   const handleChange = (panel) => (event, newExpanded) => {
@@ -56,7 +57,24 @@ export default function CustomizedAccordions() {
 
   return (
     <div>
-      <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} style={{backgroundColor: "#181d24"}}>
+      {services.map((service, index) => {
+        const {name, desc} = service;
+        return (
+        <Accordion key={index} expanded={expanded === `panel${index + 1}`} onChange={handleChange(`panel${index + 1}`)} style={{backgroundColor: "#181d24", marginBottom: "1rem", width: "90vw"}}>
+          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" style={{backgroundColor: "#181d24"}}>
+            <Typography style={styles}>{name}</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <Typography style={{fontSize: "1.7rem", backgroundColor: "#181d24", color: '#fff'}}>
+              {desc}
+            </Typography>
+          </AccordionDetails>
+        </Accordion>
+        )
+      }
+       
+      )}
+      {/* <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} style={{backgroundColor: "#181d24"}}>
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header" style={{backgroundColor: "#181d24"}}>
           <Typography style={styles}>Collapsible Group Item #1</Typography>
         </AccordionSummary>
@@ -94,7 +112,7 @@ export default function CustomizedAccordions() {
             sit amet blandit leo lobortis eget.
           </Typography>
         </AccordionDetails>
-      </Accordion>
+      </Accordion> */}
     </div>
   );
 }

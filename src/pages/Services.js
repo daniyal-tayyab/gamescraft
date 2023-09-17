@@ -47,8 +47,17 @@ const Services = () => {
         </Swiper>
       </section>
       <section className="partnership__section">
-          <h2 className="section-heading">3D Modeling and Texturing</h2>
-          <CustomizedAccordions />
+        {
+          servicesData.map((service, index) => {
+            const {title, services} = service;
+            return (
+              <>
+                <h2 className="section-heading">{title}</h2>
+                <CustomizedAccordions services={services} />
+              </>
+            );
+          })
+        }
       </section>
       <Footer />
     </main>

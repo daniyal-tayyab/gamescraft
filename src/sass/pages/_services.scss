@@ -16,7 +16,12 @@
     .section-heading {
       font-size: 2rem;
       margin-bottom: 4rem;
+
+      &:not(:first-child) {
+        margin-top: 2rem;
+      }
     }
+
   }
 
   &__services {

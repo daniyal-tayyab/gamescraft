@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
-import News from "./pages/News";
+import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Avatar from "./pages/Avatar";
 
@@ -18,7 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/contact-us" element={<Contact/>} />
         <Route path="/services" element={<Services />} />
-        <Route path="/portfolio" element={<News />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about" element={<About />} />
         <Route path="/carrer" element={<Avatar />} />
       </Routes>
