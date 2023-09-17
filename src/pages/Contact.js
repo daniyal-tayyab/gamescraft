@@ -1,20 +1,47 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import emailjs from '@emailjs/browser';
+
 import HeroCommon from "../components/HeroCommon";
 
 import { MdLocationOn } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
+import Footer from "../components/Footer";
+
 
 const defaultFormFields = {
-  name: "",
-  email: "",
+  user_name: "",
+  user_email: "",
   message: ""
 }
 
 
 const Contact = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
-  const { name, email, password } = formFields;
+  const { user_name, user_email, message } = formFields;
+  const form  = useRef();
+
+  useEffect(() => {
+    window.scrollTo({left: 0, top: 0, behavior: "smooth"});
+  }, []);
+
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setFormFields({...formFields, [name]: value});
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_kjzbt1o', 'template_fzs60lq', form.current, 'PR2AJn2Uj-oCCxPqq')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+    resetFormFields();
+  }
+
+  const resetFormFields = () => setFormFields(defaultFormFields);
 
   return (
     <main className="contact">
@@ -37,10 +64,42 @@ const Contact = () => {
         </div>
       </div>
       <div className="contact-form">
-        <form>
-          <input />
-        </form>
+        <div class="background">
+          <div class="container">
+              <div class="screen">
+                  <div class="screen-body">
+                      <div class="screen-body-item left">
+                      <div class="app-title">
+                          <span>CONTACT</span>
+                          <span>US</span>
+                      </div>
+                      <div class="app-contact">CONTACT INFO : <span className="gr-txt">+92 300 6372110</span></div>
+                      </div>
+                      <div class="screen-body-item">
+                      <form ref={form} class="app-form">
+                          <div class="app-form-group">
+                          <input class="app-form-control gr-txt" placeholder="NAME" value="Gamescraft Studios" />
+                          </div>
+                          <div class="app-form-group">
+                          <input class="app-form-control" placeholder="EMAIL" name="user_email" value={user_email} onChange={(e) => handleChange(e)} />
+                          </div>
+                          <div class="app-form-group">
+                          <input class="app-form-control" placeholder="Name" name="user_name" value={user_name} onChange={(e) => handleChange(e)} />
+                          </div>
+                          <div class="app-form-group message">
+                          <input class="app-form-control" placeholder="MESSAGE" name="message" value={message} onChange={(e) => handleChange(e)} />
+                          </div>
+                          <div class="app-form-group buttons">
+                          <button class="app-form-button" onClick={(e) => handleSubmit(e)}>SEND</button>
+                          </div>
+                      </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
       </div>
+      <Footer />
     </main>
   );
 };

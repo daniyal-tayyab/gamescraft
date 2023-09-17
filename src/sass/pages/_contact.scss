@@ -49,7 +49,11 @@
 
   .contact-form {
     background-color: $color-sidemenu-background;
-    padding: 2rem;
+    margin: 2rem 8rem;
+
+    @media (max-width: 1000px) {
+      margin: 2rem 3rem;
+    }
   }
 
   @include respond(tab-port) {

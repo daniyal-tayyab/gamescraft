@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 
 import HomeHero from "../components/home/HomeHero";
 
@@ -11,6 +11,9 @@ import StatsComponents from "../components/StatsComponents";
 
 const Home = () => {
   const ref = useRef(null);
+  useEffect(() => {
+    window.scrollTo({left: 0, top: 0, behavior: "smooth"});
+  }, []);
   return (
     <main className="home" ref={ref}>
       <HomeHero />

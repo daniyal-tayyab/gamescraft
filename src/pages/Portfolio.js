@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 
 import HeroCommon from "../components/HeroCommon";
 
@@ -9,6 +9,9 @@ import {portfolio} from "../utils/portfolio";
 
 
 const Portfolio = () => {
+  useEffect(() => {
+    window.scrollTo({left: 0, top: 0, behavior: "smooth"});
+  }, []);
   return (
     <main className="news">
       <HeroCommon page="Portfolio" />

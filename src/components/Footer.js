@@ -5,6 +5,7 @@ import { c1, c2, c3, socialIcons } from "../utils/dummyData";
 
 import { ReactComponent as FooterLogo } from "../images/footer/footer-logo.svg";
 import animoca from "../images/footer/small-animoca.avif";
+import { Link } from "react-router-dom";
 
 const Column = styled.div`
   margin: 0 2rem;
@@ -37,31 +38,33 @@ const Footer = () => {
       <div className="footer__left">
         <div className="footer__left__useful-links">
           <Column>
-            <h4>+ INFO</h4>
             <ul>
               {c1.map((item, index) => (
-                <li key={index}>{item}</li>
+                <Link to={item.to}>
+                  <li key={index}>{item.title}</li>
+                </Link>
               ))}
             </ul>
           </Column>
           <Column>
-            <h4 style={{ opacity: "0" }}>ee</h4>
             <ul>
               {c2.map((item, index) => (
-                <li key={index}>{item}</li>
+                <Link to={item.to}>
+                  <li key={index}>{item.title}</li>
+                </Link>
               ))}
             </ul>
           </Column>
-          <Column>
-            <h4 style={{ opacity: "0" }}>ee</h4>
+          {/* <Column>
             <ul>
               {c3.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </ul>
-          </Column>
+          </Column> */}
         </div>
-        <div className="footer__left__social-links">
+      </div>
+      <div className="footer__left__social-links">
           <Column>
             <h4>FOLLOW US</h4>
             <div className="social-icons">
@@ -70,18 +73,10 @@ const Footer = () => {
               ))}
             </div>
             <div className="copyright">
-              Copyright © 2012- 2023 The Sandbox. All Rights Reserved
+              Copyright © 2012- 2023 GamesCraft Studios. All Rights Reserved
             </div>
           </Column>
         </div>
-      </div>
-      <div className="footer__right">
-        <FooterLogo />
-        <div>
-          <p>Subsidiary of</p>
-          <img src={animoca} alt="animoca" />
-        </div>
-      </div>
     </div>
   );
 };

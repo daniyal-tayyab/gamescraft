@@ -10,12 +10,10 @@
 @import "components/sidebar-item";
 @import "components/hamburger-icon";
 @import "components/drawer";
-@import "components/blog-card";
-@import "components/announcement-card";
-@import "components/map-modal";
 @import "components/home/service-card";
 @import "components/home/story-card";
 @import "components/breadcrumbs";
+@import "components/form";
 
 @import "layouts/header";
 @import "layouts/sidebar";
@@ -23,10 +21,7 @@
 @import "layouts/footer";
 @import "layouts/sidemenu";
 @import "layouts/news-hero";
-@import "layouts/latest-articles";
-@import "layouts/streaming";
 @import "layouts/maker";
-@import "layouts/highlights";
 @import "layouts/about-hero";
 @import "layouts/grid-component";
 @import "layouts/home/about";
@@ -36,9 +31,8 @@
 @import "pages/home";
 @import "pages/contact";
 @import "pages/marketplace";
-@import "pages/map";
 @import "pages/services";
 @import "pages/news";
 @import "pages/about";
-@import "pages/avatar";
 @import "pages/single-game";
+@import "pages/carrer";

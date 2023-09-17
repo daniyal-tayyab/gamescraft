@@ -43,7 +43,9 @@ const Header = () => {
         <Typography className="header__menu__signin">Sign In</Typography> */}
         
         <div className="u-display-none">
-          <Button buttonType="default">Get a Quote</Button>
+          <Link to="/contact-us">
+            <Button buttonType="default">Contact Us</Button>
+          </Link>
         </div>
       </div>
       <Drawer

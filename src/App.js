@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
-import Avatar from "./pages/Avatar";
+import Carrer from "./pages/Carrer";
 import SingleGame from "./pages/SingleGame";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about" element={<About />} />
-        <Route path="/carrer" element={<Avatar />} />
+        <Route path="/carrer" element={<Carrer />} />
         <Route path="/single-game/:id" element={<SingleGame/>}/>
       </Routes>
     </>

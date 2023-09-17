@@ -6,6 +6,7 @@ import HeroCommon from '../components/HeroCommon';
 
 import { portfolio } from '../utils/portfolio';
 import { Rating } from '@mui/material';
+import Footer from '../components/Footer';
 
 
 const Container = styled.div`
@@ -104,6 +105,7 @@ const SingleGame = () => {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse doloremque at eos dolore consequatur aliquam, in sunt doloribus delectus labore quae autem necessitatibus a magni cumque debitis? Et voluptatum tempore provident repellat, non officia dolore praesentium corporis quibusdam odit aperiam ut fuga, illum eius pariatur ad id inventore illo, veritatis dicta.</p>
             </div>
         </div>
+        <Footer />
     </main>
   )
 }

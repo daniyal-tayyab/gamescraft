@@ -46,11 +46,11 @@
 }
 
 .gr-txt {
-    background: $color-gradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-weight: bold;
+    background: $color-gradient !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    color: transparent !important;
+    font-weight: bold !important;
 }
 
 .heading-main, .heading-about {
