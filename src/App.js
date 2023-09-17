@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 import Avatar from "./pages/Avatar";
+import SingleGame from "./pages/SingleGame";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about" element={<About />} />
         <Route path="/carrer" element={<Avatar />} />
+        <Route path="/single-game/:id" element={<SingleGame/>}/>
       </Routes>
     </>
   );

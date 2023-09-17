@@ -1,5 +1,5 @@
 .about-hero {
-  height: 370px;
+  min-height: 370px;
   background-image: linear-gradient(to right, #05050548, #05050548),
     url(https://themescare.com/demos/faf-v2/assets/img/breadcrumb_bg.jpg);
   background-size: cover;
@@ -8,7 +8,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 8rem;
 
   &__content {
     display: flex;
@@ -17,6 +16,10 @@
 
     h1 {
       font-size: 4rem;
+
+      @media (max-width: 600px) {
+        font-size: 3rem;
+      }
     }
 
     p {

@@ -11,8 +11,6 @@ import { Pagination } from "swiper";
 import useWindowDimensions from "../hooks/getWindowsDimensions";
 
 import Footer from "../components/Footer";
-import ImageContentGrid from "../components/services/ImageContentGrid";
-import ReverseGrid from "../components/services/ReverseGrid";
 import ImageSlide from "../components/services/ImageSlide";
 import { servicesData } from "../utils/servicesData";
 import HeroCommon from "../components/HeroCommon";

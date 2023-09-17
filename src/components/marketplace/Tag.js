@@ -16,7 +16,7 @@ const Container = styled.div`
   min-width: fit-content;
 
   &:hover {
-    background-color: #0084ff;
+    background-color: #f07f27;
     color: #fff;
   }
 `;

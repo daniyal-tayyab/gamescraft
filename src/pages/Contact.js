@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import HeroCommon from "../components/HeroCommon";
 
 import { MdLocationOn } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
 
+const defaultFormFields = {
+  name: "",
+  email: "",
+  message: ""
+}
+
 
 const Contact = () => {
+  const [formFields, setFormFields] = useState(defaultFormFields);
+  const { name, email, password } = formFields;
+
   return (
     <main className="contact">
       <HeroCommon page="Contact Us" />
@@ -26,6 +35,11 @@ const Contact = () => {
           <p className="location">Email</p>
           <p className="location-desc">info@gamescraftstudios.com</p>
         </div>
+      </div>
+      <div className="contact-form">
+        <form>
+          <input />
+        </form>
       </div>
     </main>
   );
