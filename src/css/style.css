@@ -334,6 +334,9 @@ a {
   top: 0;
   left: 0;
 }
+.card__side--front video {
+  filter: brightness(70%);
+}
 .card__side--front .content {
   position: absolute;
   bottom: 0;
@@ -344,14 +347,15 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #14181d;
+  border-top: 2px solid #fff;
 }
 .card__side--front .content .service-name {
   font-size: 1.8rem;
-  color: #14181d;
+  color: #fff;
 }
 .card__side--front .content img {
   width: 7rem;
+  color: #fff;
 }
 .card__side--back {
   width: 100%;
@@ -1646,7 +1650,7 @@ button, input {
 .not-found {
   margin-left: 55px;
   width: calc(100vw - 55px);
-  margin-top: 50px;
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
   overflow: hidden;

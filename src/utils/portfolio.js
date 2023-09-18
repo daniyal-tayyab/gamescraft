@@ -2,7 +2,7 @@ export const portfolio = [
     {
         id: "1",
         image: 'https://themescare.com/demos/faf-v2/assets/img/games-1.jpg',
-        name: 'Desperados III Digital',
+        name: 'Blend Battles',
         desc: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
             molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
             numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium

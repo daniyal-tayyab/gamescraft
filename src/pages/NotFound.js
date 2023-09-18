@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../components/Button'
+import { Link } from 'react-router-dom'
 
 const NotFound = () => {
   return (
@@ -7,7 +8,9 @@ const NotFound = () => {
         <div className='container'>
             <h1>4<span className='gr-txt'>0</span>4</h1>
             <p>The Page You Are Looking For Not Available!</p>
-            <Button buttonType="default">Back to Home</Button>
+            <Link to="/">
+              <Button buttonType="default">Back to Home</Button>
+            </Link>
         </div>
     </div>
   )

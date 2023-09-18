@@ -3,14 +3,25 @@ import styled from "styled-components";
 import Button from "../Button";
 import { Link } from "react-router-dom";
 
+import video from "../../videos/hero.mp4";
+
 export const Container = styled.div`
-  width: 100%;
+  width: calc(100vw - 55px);
   height: 47rem;
+  /* height: 100vh; */
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+
+  video {
+   filter: brightness(40%);
+  }
+
+  @media (max-width: 900px) {
+    width: 100vw;
+  }
 
   @media (max-width: 700px) {
     height: 70rem;
@@ -69,7 +80,7 @@ const SlideOne = () => {
   return (
     <Container>
       <video
-        src="https://cdn.sandbox.game/home/Hero-Video-low.mp4"
+        src={video}
         loop="loop"
         autoPlay="autoplay"
         playsInline

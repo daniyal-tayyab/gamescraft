@@ -6,14 +6,17 @@ import unityLogo from "../../../images/services/unity.png";
 import { Link } from 'react-router-dom';
 
 const ServiceCard = ({ service }) => {
-    const {title} = service;
+    const {title, video, icon} = service;
+
+    const size = title === 'Unity' ? '9rem' : '7rem';
+    let styles = {width: size};
 
     return (
         <div class="card">
         <div class="card__side">
             <div class="card__side card__side--front"> 
                 <video
-                src="https://cdn.sandbox.game/home/Hero-Video-low.mp4"
+                src={video}
                 loop="loop"
                 autoPlay="autoplay"
                 playsInline
@@ -23,7 +26,7 @@ const ServiceCard = ({ service }) => {
                 ></video>
                 <div className='content'>
                     <h3 className='service-name'>{title}</h3>
-                    <img src={unityLogo} alt={title}/>
+                    <img src={icon} alt={title} style={styles}/>
                 </div>
             </div>
             <div class="card__side card__side--back">   

@@ -21,9 +21,9 @@ const HomeHero = () => {
         <SwiperSlide>
           <SlideOne />
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <SlideTwo />
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </section>
   );
