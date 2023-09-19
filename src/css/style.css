@@ -333,9 +333,10 @@ a {
   position: absolute;
   top: 0;
   left: 0;
+  border: 1px solid #9b9d9f;
 }
 .card__side--front video {
-  filter: brightness(70%);
+  filter: brightness(85%);
 }
 .card__side--front .content {
   position: absolute;
@@ -347,7 +348,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 2px solid #fff;
+  border-top: 1px solid #9b9d9f;
 }
 .card__side--front .content .service-name {
   font-size: 1.8rem;
@@ -439,7 +440,7 @@ a {
 }
 .story__img {
   height: 100%;
-  transform: translateX(-4rem) scale(1.4);
+  transform: translateX(0rem) scale(1.4);
   backface-visibility: hidden;
   transition: all 0.5s;
 }
@@ -1089,7 +1090,7 @@ button, input {
 
 .about-hero {
   min-height: 370px;
-  background-image: linear-gradient(to right, rgba(5, 5, 5, 0.2823529412), rgba(5, 5, 5, 0.2823529412)), url(https://themescare.com/demos/faf-v2/assets/img/breadcrumb_bg.jpg);
+  background-image: linear-gradient(to right, rgba(5, 5, 5, 0.2823529412), rgba(5, 5, 5, 0.2823529412)), url(https://i.ibb.co/pxB77rf/common.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
@@ -1262,6 +1263,16 @@ button, input {
     grid-template-columns: auto;
   }
 }
+@media (min-width: 1400px) {
+  .home-services {
+    margin: 8rem 20rem;
+  }
+}
+@media (max-width: 940px) {
+  .home-services {
+    margin: 8rem 4rem;
+  }
+}
 
 .home-portfolio {
   margin: 8rem;
@@ -1291,12 +1302,12 @@ button, input {
     grid-template-columns: auto;
   }
 }
-@media (max-width: 940px) {
+@media (min-width: 1400px) {
   .home-portfolio {
-    margin: 8rem 4rem;
+    margin: 8rem 20rem;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 940px) {
   .home-portfolio {
     margin: 8rem 4rem;
   }
@@ -1557,6 +1568,9 @@ button, input {
 }
 .single-game .lower-content .heading p {
   font-size: 1.7rem;
+  margin-top: 2rem;
+}
+.single-game .lower-content .heading button {
   margin-top: 2rem;
 }
 

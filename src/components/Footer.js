@@ -72,7 +72,7 @@ const Footer = () => {
               ))}
             </div>
             <div className="copyright">
-              Copyright © 2012- 2023 GamesCraft Studios. All Rights Reserved
+              Copyright © {new Date().getFullYear()} GamesCraft Studios. All Rights Reserved
             </div>
           </Column>
         </div>

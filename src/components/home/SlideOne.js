@@ -93,14 +93,13 @@ const SlideOne = () => {
           src="https://www.sandbox.game/cdn-cgi/image/f=auto,origin-auth=share-publicly,onerror=redirect,w=768/https://api.sandbox.game/social-events/163/logo"
           alt="logo"
         />
-        <Heading>join the metaverse</Heading>
+        <Heading>Your Game, Your Vision – Our Expertise</Heading>
         <Description>
-          Discover, Earn, Create. Explore the Metaverse and discover hundereds
-          of experiences. Join events, have fun and earn unique rewards.
+          Welcome to gamescraft studio, where creativity knows no bounds, and every click, tap, or swipe leads to a new adventure!
         </Description>
         <Button buttonType="inverted">
           <Link to="/avatar" style={{ color: "#fff" }}>
-            Create your avatar
+            Let's Create Together
           </Link>
         </Button>
       </Content>

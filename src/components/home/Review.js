@@ -13,6 +13,7 @@ import 'swiper/css/navigation';
 // import required modules
 import { Autoplay, Pagination, Navigation } from 'swiper';
 import StoryCard from './story-card/StoryCard';
+import { review } from '../../utils/reviewdata';
 
 const Container = styled.section`
     margin: 8rem;
@@ -52,9 +53,7 @@ const Review = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><StoryCard /></SwiperSlide>
-        <SwiperSlide><StoryCard /></SwiperSlide>
-        <SwiperSlide><StoryCard /></SwiperSlide>
+        {review.map((item,index) => <SwiperSlide key={index}><StoryCard item={item}/></SwiperSlide>)}
       </Swiper>
     </Container>
   );

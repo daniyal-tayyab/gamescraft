@@ -54,7 +54,7 @@ const GameCard = ({ item }) => {
       <Container>
         <Image bg={image} />
         <h3>{name}</h3>
-        <Rating defaultValue={rating} readOnly/>
+        <Rating defaultValue={rating} readOnly />
         <p>{desc}</p>
       </Container>
     </Link>

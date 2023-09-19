@@ -18,4 +18,16 @@
             grid-template-columns: auto;
         }
     }
+
+    @media (min-width: 1400px) {
+        margin: 8rem 20rem;
+    }
+
+    @media (max-width: 940px) {
+        margin: 8rem 4rem;
+    }
+
+    // @media (max-width: 700px) {
+    //     margin: 8rem 4rem;
+    // }
 }

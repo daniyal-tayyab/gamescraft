@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 
 import HeroCommon from '../components/HeroCommon';
@@ -7,6 +7,7 @@ import HeroCommon from '../components/HeroCommon';
 import { portfolio } from '../utils/portfolio';
 import { Rating } from '@mui/material';
 import Footer from '../components/Footer';
+import Button from '../components/Button';
 
 
 const Container = styled.div`
@@ -19,7 +20,7 @@ const Container = styled.div`
     flex-direction: column;
 
     img {
-      height: 400px;
+      height: 500px;
       width: 90%;
 
       @media (max-width: 750px) {
@@ -78,7 +79,7 @@ const SingleGame = () => {
     window.scrollTo({left: 0, top: 0, behavior: "smooth"});
   }, []);
 
-  const {name, image, desc, genre, releaseDate, rating, price} = game;
+  const {name, image, desc, genre, releaseDate, rating, price, link} = game;
 //   console.log("RATING: ", typeof Number(rating));
   return (
     <main className='single-game'>
@@ -86,23 +87,29 @@ const SingleGame = () => {
         <div className='game-content'>
             <Container>
                 <div>
-                    <img src={image} alt={name}
-                    />
+                    <img src={image} alt={name} />
+                    {/* <img src="https://i.ibb.co/26HPJyx/homehero.png" alt={name} /> */}
                 </div>
                 <div>
                     <h2>{name}</h2>
                     <p>{desc}</p>
-                    <Rating readOnly defaultValue={5} size='large'/>
+                    <Rating defaultValue={5} size="large" readOnly />
                     <p style={{fontSize: "1.5rem"}}>Price: <span className='gr-txt'>${price}</span></p>
                     <p>Genre: <span className='gr-txt'>{genre}</span></p>
+                    <p>Release Date: <span className='gr-txt'>{releaseDate}</span></p>
+                    <a href={link} target="_blank">
+                      <Button buttonType="default">Play now</Button>
+                    </a>
                 </div>
             </Container>
         </div>
         <div className='lower-content'>
             <div className='heading'>
                 <h3>Game Description</h3>
-                <p>It is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse doloremque at eos dolore consequatur aliquam, in sunt doloribus delectus labore quae autem necessitatibus a magni cumque debitis? Et voluptatum tempore provident repellat, non officia dolore praesentium corporis quibusdam odit aperiam ut fuga, illum eius pariatur ad id inventore illo, veritatis dicta.</p>
+                <p>{desc}</p>
+                <a href={link} target='_blank'>
+                  <Button buttonType="default">View more</Button>
+                </a>
             </div>
         </div>
         <Footer />

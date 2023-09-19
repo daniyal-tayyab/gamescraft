@@ -42,7 +42,7 @@ const Header = () => {
         </div>
         <Typography className="header__menu__signin">Sign In</Typography> */}
         
-        <div className="u-display-none">
+        <div className="">
           <Link to="/contact-us">
             <Button buttonType="default">Contact Us</Button>
           </Link>

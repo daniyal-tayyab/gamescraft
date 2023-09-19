@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Container = styled.section`
     position: relative;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(https://themescare.com/demos/faf-v2/assets/img/footer_bg.jpg) no-repeat fixed center center/cover;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)) , url(https://i.ibb.co/Y75Zcf8/stats.jpg) no-repeat fixed center center/cover;
     background-position: center;
     padding: 10rem;
 `;
@@ -38,14 +38,16 @@ const StatContainer = styled.div`
     }
 `;
 
+const data = [
+    {title: "Happy Client", count: 30}, {title: "Years of Experience", count: 8},
+    {title: "Projects", count: 70}, {title: "Team members", count: 50}
+];
+
 const StatsComponents = () => {
   return (
     <Container>
         <StatsContainer>
-            <Stat count="2356"/>
-            <Stat count="350"/>
-            <Stat count="1245"/>
-            <Stat count="102"/>
+            {data.map((item, index) => <Stat key={index} item={item}/>)}
         </StatsContainer>
     </Container>
   )
@@ -53,7 +55,8 @@ const StatsComponents = () => {
 
 export default StatsComponents;
 
-const Stat = ({count}) => {
+const Stat = ({item}) => {
+    const {count, title} = item
     const [isIntersecting, setIsIntersecting] = useState(false);
     const [counter, setCounter] = useState(0);
     const ref = useRef(null);
@@ -71,7 +74,7 @@ const Stat = ({count}) => {
             for (let count = minimum; count <= maximum; count++) {
                 setTimeout(() => {
                     setCounter(count);
-                }, 0.5 * (count - minimum));
+                }, 20 * (count - minimum));
             }
         }
         if(isIntersecting) {
@@ -82,7 +85,7 @@ const Stat = ({count}) => {
     return (
         <StatContainer ref={ref}>
             <h3 className='section-heading'><span className='heading-span'>{counter}</span></h3>
-            <p>Happy Clients</p>
+            <p>{title}</p>
         </StatContainer>
     );
 }

@@ -5,12 +5,6 @@ import {Link} from "react-router-dom";
 
 import Button from '../Button';
 
-import globe from "../../images/svgs/globe.svg";
-
-
-import bg from "../../images/about-img.jpg";
-
-
 const About = ({reference}) => {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -29,8 +23,8 @@ const About = ({reference}) => {
         y: 0,
         scrollTrigger: {
           trigger: element.querySelector(".about"),
-          start: "500px center",
-          end: "500px top",
+          start: "400px center",
+          end: "400px top",
           scrub: true
         }
       }
@@ -50,8 +44,8 @@ const About = ({reference}) => {
         y: 0,
         scrollTrigger: {
           trigger: element.querySelector(".about"),
-          start: "500px center",
-          end: "500px top",
+          start: "400px center",
+          end: "400px top",
           scrub: true
         }
       }
@@ -61,7 +55,7 @@ const About = ({reference}) => {
   return (
     <section className='home-about'>
         <div className='left'>
-            <img src={bg} alt="globe" />
+            <img src="https://i.ibb.co/xX5mYQ9/about.webp" alt="globe" />
         </div>
         <div className='right'>
             <h2 className='section-heading'>ABOUT <span className='heading-span'>Us</span></h2>
