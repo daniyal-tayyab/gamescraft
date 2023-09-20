@@ -22,7 +22,7 @@ const ServiceCard = ({ service }) => {
                 playsInline
                 muted="muted"
                 preload="auto"
-                style={{ objectFit: "cover", width: "100%", height: "100%" }}
+                style={{ objectFit: "cover", width: "100%", height: "calc(100% - 11rem)" }}
                 ></video>
                 <div className='content'>
                     <h3 className='service-name'>{title}</h3>

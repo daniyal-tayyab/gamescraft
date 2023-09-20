@@ -31,6 +31,7 @@ const Header = () => {
         )}
         <Link to="/">
           {/* <Logo /> */}
+          <p className="heading-aside">Games<span className="gr-txt">Craft</span></p>
         </Link>
       </div>
       <div className="header__menu">

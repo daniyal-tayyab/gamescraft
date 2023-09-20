@@ -7,6 +7,8 @@ import ServiceCard from './service-card/ServiceCard';
 import { services } from '../../utils/services';
 import { MdExpandMore } from "react-icons/md";
 import { Link } from 'react-router-dom';
+import ProductCard from '../product-card/ProductCard';
+import { homeServices } from '../../utils/home-services';
 
 
 const Services = ({ reference }) => {
@@ -32,6 +34,7 @@ const Services = ({ reference }) => {
           }
         );
       }, []);
+      console.log(homeServices);
 
   return (
     <section className='home-services'>
@@ -42,7 +45,8 @@ const Services = ({ reference }) => {
         </Link>
       </div>
       <section className='services-card-section'>
-        {services.map((service, index) => <ServiceCard key={index} service={service} />)}
+        {/* {services.map((service, index) => <ServiceCard key={index} service={service} />)} */}
+        {homeServices.map((service, index) => <ProductCard key={index} service={service} />)}
       </section>
     </section>
   )
