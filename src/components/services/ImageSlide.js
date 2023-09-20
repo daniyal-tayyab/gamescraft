@@ -85,10 +85,18 @@ const Image = styled.img`
   height: 258px;
   object-fit: cover;
   border-radius: 10px;
+
+
   
   @media (min-width: 1350px) {
     min-height: 500px;
   }
+
+  @media (max-width: 1600px) {
+    min-height: 648px;
+  }
+
+
 `;
 
 const ImageSlide = ({ item }) => {

@@ -39,6 +39,12 @@ export const Content = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
 
+  .heading-aside {
+    font-size: 6rem;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+
   img {
     width: 300px;
   }
@@ -89,10 +95,11 @@ const SlideOne = () => {
         style={{ objectFit: "cover", width: "100%", height: "100%" }}
       ></video>
       <Content>
-        <img
+        {/* <img
           src="https://www.sandbox.game/cdn-cgi/image/f=auto,origin-auth=share-publicly,onerror=redirect,w=768/https://api.sandbox.game/social-events/163/logo"
           alt="logo"
-        />
+        /> */}
+        <p className="heading-aside">Games<span className="gr-txt">Craft</span></p>
         <Heading>Your Game, Your Vision – Our Expertise</Heading>
         <Description>
           Welcome to gamescraft studio, where creativity knows no bounds, and every click, tap, or swipe leads to a new adventure!

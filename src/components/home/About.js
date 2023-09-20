@@ -5,6 +5,10 @@ import {Link} from "react-router-dom";
 
 import Button from '../Button';
 
+import logo from "../../images/logou.png";
+
+
+
 const About = ({reference}) => {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -52,10 +56,11 @@ const About = ({reference}) => {
     );
   }, []);
 
+
   return (
     <section className='home-about'>
         <div className='left'>
-            <img src="https://i.ibb.co/xX5mYQ9/about.webp" alt="globe" />
+          <img src={logo} alt="globe" />
         </div>
         <div className='right'>
             <h2 className='section-heading'>ABOUT <span className='heading-span'>Us</span></h2>

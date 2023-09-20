@@ -30,7 +30,7 @@ const Header = () => {
           <BiMenu className="hamburger-icon" onClick={handleToggleDrawer} />
         )}
         <Link to="/">
-          <Logo />
+          {/* <Logo /> */}
         </Link>
       </div>
       <div className="header__menu">
@@ -46,7 +46,7 @@ const Header = () => {
           <Link to="/contact-us">
             <Button buttonType="default">Contact Us</Button>
           </Link>
-        </div>
+        </div> 
       </div>
       <Drawer
         open={isDrawerOpen}

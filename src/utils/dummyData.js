@@ -32,10 +32,10 @@ export const sidebarItems = [
     to: "/services",
   },
   {
-    title: "Carrer",
+    title: "Careers",
     Icon: Avatar,
     Active: AvatarActive,
-    to: "/carrer",
+    to: "/careers",
   },
   {
     title: "Contact Us",
@@ -68,7 +68,7 @@ export const c1 = [
 
 export const c2 = [
   {
-    title: "Carrers",
+    title: "Careers",
     to: "/carrer"
   },
   {

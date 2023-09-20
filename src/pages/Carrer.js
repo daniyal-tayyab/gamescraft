@@ -12,7 +12,7 @@ const Carrer = () => {
   }, []);
   return (
     <>
-      <HeroCommon page="Carrers"/>
+      <HeroCommon page="Careers"/>
       <main className="carrer">
         <div className="carrer-wrapper">
           <div className="carrer-wrapper__header">
